@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1 {
+   background-color: rgb(187, 229, 243);
+    text-align: center;
+}
+h2 {
+    color: #F5e;
+}
+h3{
+    text-align: center;
+    font-size: 2em;
+    text-decoration-line: underline;
+}
+body{
+    background-color: lightblue;
+}
+nav{
+    height: 33vh;
+    background-image: linear-gradient(45deg, rgb(255, 224, 158) , rgb(255, 205, 112)); 
+    background-color: rgb(255, 209, 110);
+    #formulario {
+        height: 7vh;
+        background-image: linear-gradient(to top, white , gray); 
+        text-align: center;
+        padding-top: 2vh;
+}
+    #busqueda{
+        height: 30px;
+        border: solid 2px black;
+    }
+    .boton{
+        height: 30px;
+        width: 100px;
+        color: black;
+        background-color: rgb(27, 190, 109);
+        border: solid 2px black;
+    }
+    .titulo{
+        margin-left: 40vh;
+        margin-top: 7vh;
+        font-size: 4em;
+        animation-name:titulo;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes titulo {
+    20% {
+        color: red;
+        }
+    40%{
+        color: #ff7e00;
+        }
+    60%{
+        color: green;
+        }
+    80%{
+        color: blue;
+        }
+    100% {
+        color: black;
+        }
+    }
+    .subtitulo{
+        margin-left: 40vh;
+        font-size: 2em;
+        animation-name:subtitulo;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes subtitulo {
+     20% {
+        color: red;
+        }
+    40%{
+        color: #ff7e00;
+        }
+    60%{
+        color: green;
+        }
+    80%{
+        color: blue;
+        }
+    100% {
+        color: black;
+        }
+    }
+}
+//mensaje de error que sale al ingresar un nombre muy corto (esta hecho en java)
+.mensajedeError{
+    color: red;
+    margin-left: 77vh;
+    margin-top: -21.5vh;
+    margin-bottom: 1vh;
+    font-size: 1.1em;
+}
+
+.articulo_1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:  space-between;
+    //align-content: space-around;
+    align-items: center;
+    height: 1000px;    
+   
+    .padre{
+        margin-left: 2vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-around;
+        //flex-wrap: wrap;
+        height: 850px;
+        width: 115vh;
+        background-color: rgb(174,238,207);
+
+        .hijo{
+            display: flex;
+            .subHijo{
+                text-align: center;
+                .inlinea{
+                    display: inline;
+                }
+                 .precio{
+                     display: inline;
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+
+    .tabla{
+        
+        margin-right: 2vh;
+        height: 850px;
+        width: 73vh;
+        background-color: white;
+        table{
+            margin: 2vh;
+            margin-left: 6vh;
+            thead{
+                tr{
+                    td{
+                        border: solid 1px black;
+                        padding:1vh;
+                        background-image: linear-gradient(to top, gray, white);
+                        font-size: 1.5em;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .trAgregadoJs{
+            .tdAgregadoJs{
+
+                font-size: 1.3em;
+                text-align: center;
+                border: solid 1px blue;
+                padding:1.5vh;
+                background-image: linear-gradient(to top, #ddd, white);
+            }
+        }
+        
+    }
+
+    .imagenes {
+        height: 20vh;
+        width: auto;
+        border: 2px black solid;
+        margin-left: 25px;
+        display: block;
+    }
+    .imagenes:hover{
+    height: 19vh;
+    border: 5px blue solid;
+    }
+}
+
+.articulo_2{
+    margin-top: 10px;
+    text-align: center;
+    height: 40px;
+    padding-left: 43%;
+    width: 250px;
+    display: flex;
+
+    .finalizar {
+        background-color: chartreuse;
+        border: solid 2px black;
+        width: 250px;
+        padding-top: 10px;
+        margin-right: 10px;
+    }
+   
+    .finalizar:hover{
+        border: 5px blue solid;
+    }
+     .limpiar {
+        background-color: chartreuse;
+        border: solid 2px black;
+        width: 250px;
+        padding-top: 10px;
+    }
+    .limpiar:hover{
+        border: 5px blue solid;
+    }
+}
+
+
+.articulo_3{
+    .parrafo{
+        text-align: center;
+        font-size: 25px;
+        text-decoration: underline;
+        color: crimson;
+        font-weight: 900;
+        margin-top: 2vh;
+    }
+
+    .hijo_1-art3{
+        text-align: center;
+        width: 100%;
+        display: flex;
+
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 5px;
+        margin-left: 5px;
+        font-size: 25px;
+        
+    }
+    #ponerFondo{
+            background-color: lightgreen;
+        }
+    .Total{
+        //border-top: black solid 1px;
+        margin-right: 13%;
+        font-size: 25px;
+        text-align: right;
+        margin-top: 2vh;
+        color: blue;
+        //text-align: center;
+    }
+}

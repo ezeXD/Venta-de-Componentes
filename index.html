@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra_de_Componentes</title>
+    <link rel="stylesheet" href="sass/css/destino.css" />
+
+</head>
+<body>
+    <nav id="nav1">
+        <form id = "formulario">
+            <input type="search" name="busquedacodigo" size="50" maxlength="50" id="busqueda" placeholder="ingrese lo que quiere buscar">
+            <input type="submit" value="Buscar" class = "boton">
+        </form>
+        <p class="titulo">VENTA COMPONENTES</p>
+        <p class="subtitulo">Computadoras, Tablets, Celulares y mas</p>
+        <!-- <P class = "mensajedeError">Error al ingresar el nombre del componente</P> -->
+
+    </nav>
+    <h1>Bienvenido!!!</h1>
+    <h2>Este programa va a simular la compra de una pagina de electrodomesticos en internet.</h2>
+    <!--Articulo 1-->
+    <!--Voy a cambiar las fotos, es para ver como van quedando-->
+    <article class = "articulo_1">
+        <div class = "padre">
+            
+            <h3>Componentes</h3>
+            <div class = "hijo">
+                <div class= "subHijo">
+                    <img src="./imagenes/computadoras/computadora_1.jpg" alt="computadora 1" class="imagenes" id="imagen_1">
+                    <p class="precio" class="inlinea">$</p>
+                    <p class = "precio" id="objeto_1">100</p>
+                </div>
+                
+                <div class= "subHijo">
+                    <img src="./imagenes/computadoras/computadora_2.jpg" alt="computadora 2" class="imagenes" id="imagen_2">
+                    <p class="precio" class="inlinea">$</p>
+                    <p class="precio" id="objeto_2">200</p>
+                </div>
+
+                <div class= "subHijo">
+                    <img src="./imagenes/computadoras/computadora_3.jpg" alt="computadora 3" class="imagenes" id="imagen_3">
+                    <p class="precio" class="inlinea">$</p>
+                    <p class="precio" id="objeto_3">300</p>
+                </div>
+            </div>
+
+            <div class ="hijo">
+                <div class = "subHijo">
+                    <img src="./imagenes/tablets/tablet_1.jpg" alt="tablet 1" class="imagenes">
+                    <p class="precio" class="inlinea">$</p>
+                    <p class="precio" id="objeto_4">5820</p>
+                </div>
+
+                <div class ="subHijo">
+                    <img src="./imagenes/tablets/tablet_2.jpg" alt="tablet 2" class="imagenes">
+                    <p class="precio" class="inlinea">$</p>
+                    <p class="precio" id="objeto_5">5820</p>
+                </div>
+
+                <div class ="subHijo">
+                    <img src="./imagenes/tablets/tablet_3.jpg" alt="tablet 3" class="imagenes">
+                    <p class="precio" class="inlinea">$</p>
+                    <p class="precio" id="objeto_6">5820</p>
+                </div>
+            </div>
+
+            <div class="hijo">
+                <div class="subHijo">
+                    <img src="./imagenes/celulares/celular_1.jpg" alt="celular 1" class="imagenes">
+                    <p class="precio" class="inlinea">$</p>
+                    <p class="precio" id="objeto_7">5820</p>
+                </div>
+
+                <div class="subHijo">
+                    <img src="./imagenes/celulares/celular_2.jpg" alt="celular 2" class="imagenes">
+                    <p class="precio" class="inlinea">$</p>
+                    <p class="precio" id="objeto_8">5820</p>
+                </div>
+                
+                <div class="subHijo">
+                    <img src="./imagenes/celulares/celular_3.jpg" alt="celular 3" class="imagenes">
+                    <p class="precio" class="inlinea">$</p>
+                    <p class="precio" id="objeto_9">5820</p>
+                </div>
+            </div>
+        </div>
+
+        <div class = "tabla">
+            <h3>Elementos Añadidos al Carrito</h3>
+            <table >
+                <thead>
+                <tr>
+                    <td>cantidad</td>
+                    <td>Componente</td>
+                    <td>Valor</td>
+                    <td>Monto a pagar </td>
+                </tr>
+                </thead>
+              
+            </table>
+        </div>
+        
+    </article>
+
+    
+    <!-- No tienen ninguna funcion todavia(las que tienen son pruebas)  
+    <article class = "articulo_2">
+        <div class="finalizar" onclick="finalizar()">
+            <parrafo>Finalizar</parrafo>
+        </div>
+        <div class = "limpiar" onclick="limpiar()">
+            <parrafo>Limpiar</parrafo>
+        </div>
+    </article>
+-->
+    <script src="js/librerias/jquery-3.6.0.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/Buscador.js"></script>
+</body>
+</html>
