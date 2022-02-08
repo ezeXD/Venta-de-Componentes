@@ -9,86 +9,191 @@
 
 </head>
 <body>
+    <!--Nav-->
     <nav id="nav1">
         <form id = "formulario">
-            <input type="search" name="busquedacodigo" size="50" maxlength="50" id="busqueda" placeholder="ingrese lo que quiere buscar">
-            <input type="submit" value="Buscar" class = "boton">
+            <div class="divFormulario">
+                <input type="search" name="busquedacodigo" size="50" maxlength="50" id="busqueda" placeholder="ingrese lo que quiere buscar">
+                <input type="submit" value="Buscar" class = "boton">
+                <div style="display: inline; margin-left: 5vh;" >
+                    <a href="javascript:;" id="verTabla">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cart4" class="icono"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </form>
-        <p class="titulo">VENTA COMPONENTES</p>
-        <p class="subtitulo">Computadoras, Tablets, Celulares y mas</p>
-        <!-- <P class = "mensajedeError">Error al ingresar el nombre del componente</P> -->
 
+        <p class="titulo">Descuentos en Computadoras, Tablets y Celulares</p>
+        <p class="subtitulo">Promocion Valida por todo Febrero</p>
+        <!-- <P class = "mensajedeError">Error al ingresar el nombre del componente</P> -->
+        
     </nav>
-    <h1>Bienvenido!!!</h1>
-    <h2>Este programa va a simular la compra de una pagina de electrodomesticos en internet.</h2>
+
+    <h1>ElectroMall</h1>
+    <h2 style="margin-left: 25vh">El mejor precio de electrodomesticos!! <b>No te pierdas ninguna de nuestras ofertas</b></h2>
     <!--Articulo 1-->
-    <!--Voy a cambiar las fotos, es para ver como van quedando-->
     <article class = "articulo_1">
-        <div class = "padre">
+
+        <!--Filtro--> 
+        <div class = "filtro">
+            <p><b>Filtro</b></p>
+        </div>
+        
+        <!--Componentes-->
+        <div class = "componentes" class="componentes2">
             
-            <h3>Componentes</h3>
-            <div class = "hijo">
+            <h3 class="titulo" id="borrar-titulo">Componentes</h3>
+            <!--Computadoras -->
+            <div class = "hijo" id="filtroComputadoras">
+                
+                <!-- computadora 1-->
                 <div class= "subHijo">
                     <img src="./imagenes/computadoras/computadora_1.jpg" alt="computadora 1" class="imagenes" id="imagen_1">
+                    <p> <b style="font-size: 1.2em;">Computadora 1 </b></p>
+                    <div >
+                        <a class="caracteristicas_1" class="tamanioTxt" href="javascript:;"> <p>Caracteristicas </p> </a>
+                        <p class="ocultar_1" style="display: none;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quia provident maxime cupiditate saepe perspiciatis! Libero dolores quidem odit nostrum?</p>
+                        <a class="ocultarCaracteristicas_1" href="javascript:;" style="display: none;"> Ocultar Caracteristicas</a>
+                    </div>
                     <p class="precio" class="inlinea">$</p>
                     <p class = "precio" id="objeto_1">100</p>
                 </div>
                 
+                <!-- computadora 2-->
                 <div class= "subHijo">
                     <img src="./imagenes/computadoras/computadora_2.jpg" alt="computadora 2" class="imagenes" id="imagen_2">
+                    <p> <b style="font-size: 1.2em;">Computadora 2 </b></p>
+                    <div>
+                        <a class="caracteristicas_2" href="javascript:;"> <p>Caracteristicas </p></a>
+                        <p class="ocultar_2" style="display: none;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quia provident maxime cupiditate saepe perspiciatis! Libero dolores quidem odit nostrum?</p>
+                        <a class="ocultarCaracteristicas_2" href="javascript:;" style="display: none;"> Ocultar Caracteristicas</a>
+                    </div>
                     <p class="precio" class="inlinea">$</p>
                     <p class="precio" id="objeto_2">200</p>
                 </div>
 
+                <!-- computadora 3-->
                 <div class= "subHijo">
                     <img src="./imagenes/computadoras/computadora_3.jpg" alt="computadora 3" class="imagenes" id="imagen_3">
+                    <p> <b style="font-size: 1.2em;">Computadora 3 </b></p>
+                    <div>
+                        <a class="caracteristicas_3" href="javascript:;"> <p>Caracteristicas </p></a>
+                        <p class="ocultar_3" style="display: none;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quia provident maxime cupiditate saepe perspiciatis! Libero dolores quidem odit nostrum?</p>
+                        <a class="ocultarCaracteristicas_3" href="javascript:;" style="display: none;"> Ocultar Caracteristicas</a>
+                    </div>
                     <p class="precio" class="inlinea">$</p>
                     <p class="precio" id="objeto_3">300</p>
                 </div>
             </div>
 
-            <div class ="hijo">
+            <!--Tablets -->
+            <div class ="hijo" id="filtroTablet">
+                <!--Tablet 1-->
                 <div class = "subHijo">
-                    <img src="./imagenes/tablets/tablet_1.jpg" alt="tablet 1" class="imagenes">
+                    <img src="./imagenes/tablets/tablet_1.jpg" alt="tablet 1" class="imagenes" id="imagen_4">
+                    <p> <b style="font-size: 1.2em;">Tablet 1 </b></p>
+                    <div>
+                        <a class="caracteristicas_3" href="javascript:;">
+                            <p>Caracteristicas </p>
+                        </a>
+                        <p class="ocultar_4" style="display: none;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quia provident maxime cupiditate saepe perspiciatis! Libero dolores quidem odit nostrum?</p>
+                        <a class="ocultarCaracteristicas_4" href="javascript:;" style="display: none;"> Ocultar Caracteristicas</a>
+                    </div>
                     <p class="precio" class="inlinea">$</p>
                     <p class="precio" id="objeto_4">5820</p>
                 </div>
 
+
+
+
+                <!--Tablet 2-->
                 <div class ="subHijo">
-                    <img src="./imagenes/tablets/tablet_2.jpg" alt="tablet 2" class="imagenes">
+                    <img src="./imagenes/tablets/tablet_2.jpg" alt="tablet 2" class="imagenes" id="imagen_5">
+                    <p> <b style="font-size: 1.2em;">Tablet 2 </b></p>
+                    <div>
+                        <a class="caracteristicas_5" href="javascript:;">
+                            <p>Caracteristicas </p>
+                        </a>
+                        <p class="ocultar_5" style="display: none;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quia
+                            provident maxime cupiditate saepe perspiciatis! Libero dolores quidem odit nostrum?</p>
+                        <a class="ocultarCaracteristicas_5" href="javascript:;" style="display: none;"> Ocultar Caracteristicas</a>
+                    </div>
                     <p class="precio" class="inlinea">$</p>
                     <p class="precio" id="objeto_5">5820</p>
                 </div>
 
+                <!--Tablet 3-->
                 <div class ="subHijo">
-                    <img src="./imagenes/tablets/tablet_3.jpg" alt="tablet 3" class="imagenes">
+                    <img src="./imagenes/tablets/tablet_3.jpg" alt="tablet 3" class="imagenes" id="imagen_6">
+                    <p> <b style="font-size: 1.2em;">Tablet 2 </b></p>
+                    <div>
+                        <a class="caracteristicas_6" href="javascript:;">
+                            <p>Caracteristicas </p>
+                        </a>
+                        <p class="ocultar_6" style="display: none;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quia
+                            provident maxime cupiditate saepe perspiciatis! Libero dolores quidem odit nostrum?</p>
+                        <a class="ocultarCaracteristicas_6" href="javascript:;" style="display: none;"> Ocultar Caracteristicas</a>
+                    </div>
                     <p class="precio" class="inlinea">$</p>
                     <p class="precio" id="objeto_6">5820</p>
                 </div>
             </div>
 
-            <div class="hijo">
-                <div class="subHijo">
-                    <img src="./imagenes/celulares/celular_1.jpg" alt="celular 1" class="imagenes">
+            <!--Celulares -->
+            <div class="hijo" id="filtroCelulares">
+                <div class="subHijo" >
+                    <img src="./imagenes/celulares/celular_1.jpg" alt="celular 1" class="imagenes" id="imagen_7">
+                    <p> <b style="font-size: 1.2em;">Celulares 1</b></p>
+                    <div>
+                        <a class="caracteristicas_7" href="javascript:;">
+                            <p>Caracteristicas </p>
+                        </a>
+                        <p class="ocultar_7" style="display: none;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quia
+                            provident maxime cupiditate saepe perspiciatis! Libero dolores quidem odit nostrum?</p>
+                        <a class="ocultarCaracteristicas_7" href="javascript:;" style="display: none;"> Ocultar Caracteristicas</a>
+                    </div>
                     <p class="precio" class="inlinea">$</p>
                     <p class="precio" id="objeto_7">5820</p>
                 </div>
 
                 <div class="subHijo">
-                    <img src="./imagenes/celulares/celular_2.jpg" alt="celular 2" class="imagenes">
+                    <img src="./imagenes/celulares/celular_2.jpg" alt="celular 2" class="imagenes" id="imagen_8">
+                    <p> <b style="font-size: 1.2em;">Celulare 1</b></p>
+                    <div>
+                        <a class="caracteristicas_8" href="javascript:;">
+                            <p>Caracteristicas </p>
+                        </a>
+                        <p class="ocultar_8" style="display: none;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quia
+                            provident maxime cupiditate saepe perspiciatis! Libero dolores quidem odit nostrum?</p>
+                        <a class="ocultarCaracteristicas_8" href="javascript:;" style="display: none;"> Ocultar Caracteristicas</a>
+                    </div>
                     <p class="precio" class="inlinea">$</p>
                     <p class="precio" id="objeto_8">5820</p>
                 </div>
                 
                 <div class="subHijo">
-                    <img src="./imagenes/celulares/celular_3.jpg" alt="celular 3" class="imagenes">
+                    <img src="./imagenes/celulares/celular_3.jpg" alt="celular 3" class="imagenes" id="imagen_9">
+                    <p> <b style="font-size: 1.2em;">Celulare 3</b></p>
+                    <div>
+                        <a class="caracteristicas_9" href="javascript:;">
+                            <p>Caracteristicas </p>
+                        </a>
+                        <p class="ocultar_9" style="display: none;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quia
+                            provident maxime cupiditate saepe perspiciatis! Libero dolores quidem odit nostrum?</p>
+                        <a class="ocultarCaracteristicas_9" href="javascript:;" style="display: none;"> Ocultar Caracteristicas</a>
+                    </div>
                     <p class="precio" class="inlinea">$</p>
                     <p class="precio" id="objeto_9">5820</p>
                 </div>
             </div>
         </div>
 
-        <div class = "tabla">
+        <!--Tabla-->
+        <div class = "tabla" style="display: none;">
             <h3>Elementos Añadidos al Carrito</h3>
             <table >
                 <thead>
@@ -99,25 +204,26 @@
                     <td>Monto a pagar </td>
                 </tr>
                 </thead>
-              
             </table>
-        </div>
-        
-    </article>
+            <div class= "total"></div>
 
-    
-    <!-- No tienen ninguna funcion todavia(las que tienen son pruebas)  
-    <article class = "articulo_2">
-        <div class="finalizar" onclick="finalizar()">
-            <parrafo>Finalizar</parrafo>
-        </div>
-        <div class = "limpiar" onclick="limpiar()">
-            <parrafo>Limpiar</parrafo>
+            <div>
+                <button style="display: none;" class="finalizarCompra">FinalizarCompra</button>
+            </div>
+            
         </div>
     </article>
--->
+    
+    
     <script src="js/librerias/jquery-3.6.0.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/comprar.js"></script>
     <script src="js/Buscador.js"></script>
+    <script src="js/caracteristicas.js"></script>
+    <script src="js/filtro.js"></script>
+    <script src="js/tabla.js"></script> 
+    <script src="js/FinalizarCompra.js"></script>
+    
+
 </body>
 </html>

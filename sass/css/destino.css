@@ -7,7 +7,7 @@ h1 {
   text-align: center; }
 
 h2 {
-  color: #F5e; }
+  color: #5566ff; }
 
 h3 {
   text-align: center;
@@ -18,25 +18,30 @@ body {
   background-color: lightblue; }
 
 nav {
-  height: 33vh;
+  height: 35vh;
   background-image: linear-gradient(45deg, #ffe09e, #ffcd70);
   background-color: #ffd16e; }
   nav #formulario {
     height: 7vh;
     background-image: linear-gradient(to top, white, gray);
     text-align: center;
-    padding-top: 2vh; }
-  nav #busqueda {
-    height: 30px;
-    border: solid 2px black; }
-  nav .boton {
-    height: 30px;
-    width: 100px;
-    color: black;
-    background-color: #1bbe6d;
-    border: solid 2px black; }
+    padding-top: 4vh; }
+    nav #formulario .divFormulario {
+      margin-top: -3vh; }
+    nav #formulario #busqueda {
+      height: 30px;
+      border: solid 2px black;
+      margin-top: -20px;
+      background-color: #a8c4f7; }
+    nav #formulario .boton {
+      height: 30px;
+      width: 100px;
+      color: black;
+      background-color: #1bbe6d;
+      border: solid 2px black;
+      display: inline; }
   nav .titulo {
-    margin-left: 40vh;
+    margin-left: 25vh;
     margin-top: 7vh;
     font-size: 4em;
     animation-name: titulo;
@@ -55,7 +60,7 @@ nav {
   100% {
     color: black; } }
   nav .subtitulo {
-    margin-left: 40vh;
+    margin-left: 25vh;
     font-size: 2em;
     animation-name: subtitulo;
     animation-duration: 15s;
@@ -75,7 +80,7 @@ nav {
 
 .mensajedeError {
   color: red;
-  margin-left: 77vh;
+  margin-left: 72vh;
   margin-top: -21.5vh;
   margin-bottom: 1vh;
   font-size: 1.1em; }
@@ -85,31 +90,59 @@ nav {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-content: space-around;
   align-items: center;
-  height: 1000px; }
-  .articulo_1 .padre {
-    margin-left: 2vh;
+  height: 1300px; }
+  .articulo_1 .filtro {
+    text-align: center; }
+    .articulo_1 .filtro p {
+      margin-top: 3vh;
+      font-size: 2em;
+      text-decoration: underline; }
+    .articulo_1 .filtro button {
+      margin-top: 3.5vh;
+      background-color: #ff7e00;
+      width: 280px;
+      height: 65px;
+      text-align: center;
+      font-size: 1.2em; }
+    .articulo_1 .filtro button:hover {
+      background-color: #f39231; }
+  .articulo_1 #verTabla {
+    display: inline;
+    width: 20vh;
+    font-size: 1.2em; }
+  .articulo_1 .componentes {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-content: space-around;
-    height: 850px;
-    width: 115vh;
-    background-color: #aeeecf; }
-    .articulo_1 .padre .hijo {
-      display: flex; }
-      .articulo_1 .padre .hijo .subHijo {
-        text-align: center; }
-        .articulo_1 .padre .hijo .subHijo .inlinea {
+    height: 1200px;
+    width: 108vh;
+    background-color: #aeeecf;
+    margin-right: 27vh; }
+    .articulo_1 .componentes .titulo {
+      margin-top: -20vh;
+      margin-bottom: 5vh; }
+    .articulo_1 .componentes .hijo {
+      display: flex;
+      font-size: 1.2em; }
+      .articulo_1 .componentes .hijo .subHijo {
+        text-align: center;
+        margin-right: 1vh; }
+        .articulo_1 .componentes .hijo .subHijo .inlinea {
           display: inline; }
-        .articulo_1 .padre .hijo .subHijo .precio {
+        .articulo_1 .componentes .hijo .subHijo .precio {
           display: inline;
           font-size: 2em; }
   .articulo_1 .tabla {
     margin-right: 2vh;
-    height: 850px;
-    width: 73vh;
-    background-color: white; }
+    height: 1200px;
+    width: 60vh;
+    background-color: #08d8ce;
+    margin-left: -27vh; }
+    .articulo_1 .tabla h3 {
+      margin-top: 5vh; }
     .articulo_1 .tabla table {
       margin: 2vh;
       margin-left: 6vh; }
@@ -126,13 +159,15 @@ nav {
       padding: 1.5vh;
       background-image: linear-gradient(to top, #ddd, white); }
   .articulo_1 .imagenes {
-    height: 20vh;
-    width: auto;
+    height: 190px;
+    width: 300px;
+    object-fit: cover;
     border: 2px black solid;
     margin-left: 25px;
-    display: block; }
+    display: block;
+    cursor: pointer; }
   .articulo_1 .imagenes:hover {
-    height: 19vh;
+    height: 188px;
     border: 5px blue solid; }
 
 .articulo_2 {
